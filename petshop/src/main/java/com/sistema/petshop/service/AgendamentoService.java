@@ -6,4 +6,5 @@ public interface AgendamentoService {
 
     Agendamento salvar(Agendamento agendamento);
 
+    Agendamento buscarPorId(Long idAgendamento);
 }

@@ -6,10 +6,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public interface AgendamentoRepository extends JpaRepository<Agendamento, Long>{
+public interface AgendamentoRepository extends JpaRepository<Agendamento, Long> {
 
-    boolean existsByDataAgendamentoAndHorario (
-            LocalDate dataAgendamento, //Pego no model
-            LocalTime horario //Pego no model
+    boolean existsByDataAgendamentoAndHorario(
+            LocalDate dataAgendamento,
+            LocalTime horario
     );
 }
